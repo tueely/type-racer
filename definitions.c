@@ -11,7 +11,7 @@
 
 #define FB_WIDTH 320
 #define FB_HEIGHT 240
-#define FB_STRIDE 512
+#define FB_STRIDE 512 //Need to explain
 #define CHAR_SIZE 8
 
 // Global variables moved to top
