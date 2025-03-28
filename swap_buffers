@@ -1,0 +1,5 @@
+void swap_buffers() {
+  while (*(volatile uint32_t*)STATUS_REG & 0x01);
+  *(volatile uint32_t*)(FB_CONTROLLER + 4) = (uint32_t)back_buffer;
+  *(volatile uint32_t*)FB_CONTROLLER = 1;
+}
